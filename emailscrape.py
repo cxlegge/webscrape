@@ -36,7 +36,7 @@ def scrape(url_arg, dirs):
                 #add to added to avoid duplication
                 added.append(l)
     #causes the thread to quit
-    exit()
+    return
     
 def emailfinder(text):
     return re.findall(r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", text)
